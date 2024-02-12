@@ -1,0 +1,15 @@
+class Solution {
+public:
+    std::string reverseWords(std::string s) 
+    {
+        std::istringstream iss(s);
+        std::string word, reversed; 
+
+        while (iss >> word) 
+        { 
+            reversed = word + " " + reversed;
+        }
+
+        return reversed.substr(0, reversed.size() - 1); 
+    }
+};
