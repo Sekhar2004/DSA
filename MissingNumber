@@ -1,0 +1,17 @@
+int missingNumber(vector<int>& nums)
+    {
+        int n=nums.size();
+
+        int total_sum = n*(n+1)/2;
+
+        int actual_sum = 0;
+
+        for (int num : nums)
+        {
+            actual_sum = num + actual_sum;
+        }
+
+        return total_sum - actual_sum;
+
+        
+    }
