@@ -14,3 +14,6 @@ public:
         
     }
 };
+
+//string::npos is a special constant in C++ that represents a value that means "no position."(-1)
+//It is used by string functions like find to indicate that a substring was not found.
